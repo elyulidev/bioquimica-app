@@ -1,15 +1,15 @@
 "use client";
 
+import { useContext, useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
-import { useContext, useEffect, useState } from "react";
-import { Switch } from "./ui/switch";
-import Logo from "../../public/bioquimico.webp";
 import Link from "next/link";
-import { Tabs, TabsList, TabsTrigger } from "./ui/tabs";
-import { FaBook, FaDatabase, FaHome, FaSitemap } from "react-icons/fa";
+import { FaBook, FaHome, FaSitemap } from "react-icons/fa";
 import { GrSchedulePlay } from "react-icons/gr";
+import Logo from "../../public/bioquimico.webp";
 import { NavContext } from "./context/NavContext";
+import { Switch } from "./ui/switch";
+import { Tabs, TabsList, TabsTrigger } from "./ui/tabs";
 
 const Nav = () => {
 	const [mounted, setMounted] = useState(false);
@@ -47,11 +47,6 @@ const Nav = () => {
 									<FaSitemap className='text-primary' />
 								</Link>
 							</TabsTrigger>
-							{/* <TabsTrigger value='/recursos'>
-								<Link href={`/recursos`}>
-									<FaDatabase className='text-primary' />
-								</Link>
-							</TabsTrigger> */}
 							<TabsTrigger value='/multimedias'>
 								<Link href={`/multimedias`}>
 									<GrSchedulePlay className='text-primary' />
