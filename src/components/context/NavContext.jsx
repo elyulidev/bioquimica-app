@@ -7,16 +7,16 @@ const NavContext = createContext();
 const linksNav = ["/", "/temas", "/recursos", "/multimedias", "/bibliografia"];
 
 const NavContextProvider = ({ children }) => {
-	const [nav, setNav] = useState("/");
+	const [path, setPath] = useState("/");
 	const pathname = usePathname();
 
 	const updateNav = (pathname) => {
 		if (pathname === "/") {
-			return setNav("/");
+			return setPath("/");
 		} else
 			linksNav.forEach((link) => {
 				if (pathname.startsWith(link)) {
-					return setNav(link);
+					return setPath(link);
 				}
 			});
 	};
@@ -26,7 +26,7 @@ const NavContextProvider = ({ children }) => {
 	}, [pathname]);
 
 	const data = {
-		nav,
+		path,
 	};
 
 	return <NavContext.Provider value={data}>{children}</NavContext.Provider>;

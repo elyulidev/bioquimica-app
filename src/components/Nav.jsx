@@ -11,10 +11,10 @@ import { NavContext } from "./context/NavContext";
 import { Switch } from "./ui/switch";
 import { Tabs, TabsList, TabsTrigger } from "./ui/tabs";
 
-const Nav = () => {
+const NavComp = () => {
 	const [mounted, setMounted] = useState(false);
 	const { setTheme, theme } = useTheme();
-	const { nav } = useContext(NavContext);
+	const { path } = useContext(NavContext);
 
 	useEffect(() => {
 		setMounted(true);
@@ -35,7 +35,7 @@ const Nav = () => {
 			</div>
 			<div className='flex justify-between items-center gap-4'>
 				<div className='hidden lg:flex'>
-					<Tabs className={``} defaultValue='/' value={nav}>
+					<Tabs className={``} defaultValue='/' value={path}>
 						<TabsList className='flex justify-between'>
 							<TabsTrigger value='/'>
 								<Link href={`/`}>
@@ -73,4 +73,4 @@ const Nav = () => {
 	);
 };
 
-export default Nav;
+export default NavComp;
