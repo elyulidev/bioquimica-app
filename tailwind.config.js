@@ -3,7 +3,6 @@ const { fontFamily } = require("tailwindcss/defaultTheme");
 
 module.exports = {
 	darkMode: ["class"],
-	mode: "jit",
 	content: [
 		"./pages/**/*.{js,jsx}",
 		"./components/**/*.{js,jsx}",
@@ -101,8 +100,5 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [
-		require("tailwindcss-animate"),
-		require("@kamona/tailwindcss-perspective"),
-	],
+	plugins: [require("tailwindcss-animate")],
 };

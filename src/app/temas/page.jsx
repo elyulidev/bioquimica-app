@@ -46,29 +46,6 @@ const ThemesPage = () => {
 					</Link>
 				))}
 			</section>
-			{/* <section className='hidden md:hidden lg:flex perspective-10 lg:justify-center lg:items-center'>
-				<div className='relative bg-slate-500 container-animated w-[450px] h-[450px] mx-auto perspective-10 '>
-					<Link
-						href={`/temas/1/intro`}
-						className='absolute left-0 top-0 w-[120px] h-[120px] rotate-x-270 '
-					>
-						<div className='shrinkCard1'>
-							<HoverCard>
-								<HoverCardTrigger asChild>
-									<Image src={Tema1} alt='' className='' />
-								</HoverCardTrigger>
-								<HoverCardContent className='w-40 bg-card-foreground'>
-									<div className='flex justify-between space-x-4'>
-										<span className='text-card'>Introdução</span>
-									</div>
-								</HoverCardContent>
-							</HoverCard>
-						</div>
-					</Link>
-
-					
-				</div>
-			</section> */}
 		</main>
 	);
 };

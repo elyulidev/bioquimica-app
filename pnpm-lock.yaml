@@ -67,9 +67,6 @@ dependencies:
     version: 1.0.7(tailwindcss@3.4.1)
 
 devDependencies:
-  '@kamona/tailwindcss-perspective':
-    specifier: ^0.1.1
-    version: 0.1.1(tailwindcss@3.4.1)
   autoprefixer:
     specifier: ^10.0.1
     version: 10.4.17(postcss@8.4.35)
@@ -419,14 +416,6 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.4.15
-
-  /@kamona/tailwindcss-perspective@0.1.1(tailwindcss@3.4.1):
-    resolution: {integrity: sha512-ayC/wnfR1EYBIc3ShDKp8oYfZTPPo1aRcEuMVI+BcoUz28bsxtEpiakS0Gc6vvXi9LjKuJillJYShMl+qGldEw==, tarball: https://registry.npmjs.org/@kamona/tailwindcss-perspective/-/tailwindcss-perspective-0.1.1.tgz}
-    peerDependencies:
-      tailwindcss: '>=2.2.0'
-    dependencies:
-      tailwindcss: 3.4.1
-    dev: true
 
   /@next/env@14.1.0:
     resolution: {integrity: sha512-Py8zIo+02ht82brwwhTg36iogzFqGLPXlRGKQw5s+qP/kMNc4MAyDeEwBKDijk6zTIbegEgu8Qy7C1LboslQAw==, tarball: https://registry.npmjs.org/@next/env/-/env-14.1.0.tgz}

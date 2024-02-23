@@ -31,7 +31,6 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@kamona/tailwindcss-perspective": "^0.1.1",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
