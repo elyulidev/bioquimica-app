@@ -1,7 +1,4 @@
 import Particle from "@/components/Particle";
-import Image from "next/image";
-import Gif1 from "../../public/Animation - 1707833044336.gif";
-import Gif2 from "../../public/Animation - 1707832375635.gif";
 
 export default function Home() {
 	return (

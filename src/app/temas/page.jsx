@@ -1,12 +1,5 @@
 import Card from "@/components/Card";
-import Image from "next/image";
 import Link from "next/link";
-import Tema1 from "../../../public/tematicas/tema1.webp";
-import {
-	HoverCard,
-	HoverCardContent,
-	HoverCardTrigger,
-} from "@/components/ui/hover-card";
 
 const themeCards = [
 	{
@@ -39,7 +32,6 @@ const ThemesPage = () => {
 	return (
 		<main className='w-4/5 mx-auto grid justify-center gap-4 pt-[68px] pb-32 '>
 			<section className='grid gap-4 md:grid-cols-2 lg:grid-cols-3'>
-				{/* lg:hidden */}
 				{themeCards.map((t) => (
 					<Link href={t.href} key={t.id} className='mx-auto'>
 						<Card {...t} />
