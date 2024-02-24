@@ -8,11 +8,11 @@ import { GrSchedulePlay } from "react-icons/gr";
 import Logo from "../../public/bioquimico.webp";
 import { NavContext } from "./context/NavContext";
 import { Tabs, TabsList, TabsTrigger } from "./ui/tabs";
-import { ModeToggle } from "./ModeToggle";
+import ModeToggle from "@/components/ModeToggle";
 
 const NavComp = () => {
 	const { path } = useContext(NavContext);
-	console.log("path>>>", path);
+
 	return (
 		<nav className='flex justify-between items-center w-4/5 mx-auto'>
 			<div className='text-primary '>
