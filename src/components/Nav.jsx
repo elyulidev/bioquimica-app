@@ -9,6 +9,7 @@ import Logo from "../../public/bioquimico.webp";
 import { NavContext } from "./context/NavContext";
 import { Tabs, TabsList, TabsTrigger } from "./ui/tabs";
 import SwitchComp from "./SwitchComp";
+import { ModeToggle } from "./ModeToggle";
 
 const NavComp = () => {
 	const { path } = useContext(NavContext);
@@ -49,7 +50,7 @@ const NavComp = () => {
 				</div>
 
 				<div className=''>
-					<SwitchComp />
+					<ModeToggle />
 				</div>
 			</div>
 		</nav>

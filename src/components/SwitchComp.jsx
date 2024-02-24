@@ -6,23 +6,25 @@ import { Switch } from "./ui/switch";
 
 const SwitchComp = () => {
 	const [mounted, setMounted] = useState(false);
-	const { setTheme, theme } = useTheme();
+	const { setTheme, resolvedTheme } = useTheme();
 
 	useEffect(() => {
 		setMounted(true);
 	}, []);
 
 	if (!mounted) return null;
+
 	console.log("mounted>>>", mounted);
+	console.log("resolvedTheme>>>", resolvedTheme);
 
 	const toogleMode = () => {
-		setTheme(theme === "light" ? "dark" : "light");
+		setTheme(resolvedTheme === "light" ? "dark" : "light");
 	};
 
 	return (
 		<Switch
 			className='text-primary'
-			checked={theme === "dark" ? true : false}
+			checked={resolvedTheme === "dark" ? true : false}
 			onCheckedChange={toogleMode}
 		/>
 	);
