@@ -8,7 +8,6 @@ import { GrSchedulePlay } from "react-icons/gr";
 import Logo from "../../public/bioquimico.webp";
 import { NavContext } from "./context/NavContext";
 import { Tabs, TabsList, TabsTrigger } from "./ui/tabs";
-import SwitchComp from "./SwitchComp";
 import { ModeToggle } from "./ModeToggle";
 
 const NavComp = () => {
