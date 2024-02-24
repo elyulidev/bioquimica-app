@@ -27,18 +27,18 @@ export default function RootLayout({ children }) {
 				)}
 			>
 				<link rel='icon' href='/favicons/favicon.ico' sizes='any' />
-				<ThemeProvider
-					attribute='class'
-					defaultTheme='system'
-					enableSystem
-					disableTransitionOnChange
-				>
-					<NavContextProvider>
+				<NavContextProvider>
+					<ThemeProvider
+						attribute='class'
+						defaultTheme='system'
+						enableSystem
+						disableTransitionOnChange
+					>
 						<Header />
 						{children}
 						<Footer />
-					</NavContextProvider>
-				</ThemeProvider>
+					</ThemeProvider>
+				</NavContextProvider>
 			</body>
 		</html>
 	);
