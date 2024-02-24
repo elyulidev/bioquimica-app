@@ -4,7 +4,7 @@ import { createContext, useEffect, useState } from "react";
 
 const NavContext = createContext();
 
-const linksNav = ["/", "/temas", "/recursos", "/multimedias", "/bibliografia"];
+const linksNav = ["/", "/temas", "/multimedias", "/bibliografia"];
 
 const NavContextProvider = ({ children }) => {
 	const [path, setPath] = useState("/");
