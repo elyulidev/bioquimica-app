@@ -1,15 +1,14 @@
 "use client";
 
-import { FaSun, FaMoon } from "react-icons/fa";
 import { useTheme } from "next-themes";
-
-import { Button } from "@/components/ui/button";
+import { Button } from "./ui/button";
 import {
 	DropdownMenu,
 	DropdownMenuContent,
 	DropdownMenuItem,
 	DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "./ui/dropdown-menu";
+import { FaMoon, FaSun } from "react-icons/fa";
 
 const ModeToggle = () => {
 	const { setTheme } = useTheme();
