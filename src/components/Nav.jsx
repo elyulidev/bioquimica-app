@@ -1,30 +1,17 @@
 "use client";
 
-import { useContext, useEffect, useState } from "react";
-import { useTheme } from "next-themes";
+import { useContext } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaBook, FaHome, FaSitemap } from "react-icons/fa";
 import { GrSchedulePlay } from "react-icons/gr";
 import Logo from "../../public/bioquimico.webp";
 import { NavContext } from "./context/NavContext";
-import { Switch } from "./ui/switch";
 import { Tabs, TabsList, TabsTrigger } from "./ui/tabs";
+import SwitchComp from "./SwitchComp";
 
 const NavComp = () => {
-	const [mounted, setMounted] = useState(false);
-	const { setTheme, theme } = useTheme();
 	const { path } = useContext(NavContext);
-
-	useEffect(() => {
-		setMounted(true);
-	}, []);
-
-	if (!mounted) return null;
-
-	const toogleMode = () => {
-		setTheme(theme === "light" ? "dark" : "light");
-	};
 
 	return (
 		<nav className='flex justify-between items-center w-4/5 mx-auto'>
@@ -62,11 +49,7 @@ const NavComp = () => {
 				</div>
 
 				<div className=''>
-					<Switch
-						className='text-primary'
-						checked={theme === "dark" ? true : false}
-						onCheckedChange={toogleMode}
-					/>
+					<SwitchComp />
 				</div>
 			</div>
 		</nav>
