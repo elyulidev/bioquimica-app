@@ -12,7 +12,7 @@ import { ModeToggle } from "./ModeToggle";
 
 const NavComp = () => {
 	const { path } = useContext(NavContext);
-
+	console.log("path>>>", path);
 	return (
 		<nav className='flex justify-between items-center w-4/5 mx-auto'>
 			<div className='text-primary '>

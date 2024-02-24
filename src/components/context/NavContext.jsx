@@ -26,7 +26,7 @@ const NavContextProvider = ({ children }) => {
 	}, [pathname]);
 
 	const data = {
-		path,
+		path: path,
 	};
 
 	return <NavContext.Provider value={data}>{children}</NavContext.Provider>;
