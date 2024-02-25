@@ -32,7 +32,7 @@ const MobileNav = () => {
 	}, [pathname]);
 
 	return (
-		<Tabs className={`lg:hidden`} value={path}>
+		<Tabs className={`lg:hidden`} defaultValue='/'>
 			<TabsList className='flex justify-between'>
 				<Link href={`/`}>
 					<TabsTrigger value='/'>
