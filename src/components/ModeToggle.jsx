@@ -16,7 +16,7 @@ const ModeToggle = () => {
 	return (
 		<DropdownMenu>
 			<DropdownMenuTrigger asChild>
-				<Button variant='custom' size='icon'>
+				<Button variant='outline' size='icon'>
 					<FaSun className='h-[1.2rem] w-[1.2rem] text-primary rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 ' />
 					<FaMoon className='absolute h-[1.2rem] w-[1.2rem] text-primary rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100' />
 					<span className='sr-only'>Toggle theme</span>
@@ -24,13 +24,13 @@ const ModeToggle = () => {
 			</DropdownMenuTrigger>
 			<DropdownMenuContent align='end'>
 				<DropdownMenuItem onClick={() => setTheme("light")}>
-					Light
+					Claro
 				</DropdownMenuItem>
 				<DropdownMenuItem onClick={() => setTheme("dark")}>
-					Dark
+					Escuro
 				</DropdownMenuItem>
 				<DropdownMenuItem onClick={() => setTheme("system")}>
-					System
+					Sistema
 				</DropdownMenuItem>
 			</DropdownMenuContent>
 		</DropdownMenu>
