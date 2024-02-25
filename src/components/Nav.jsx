@@ -8,7 +8,8 @@ import { GrSchedulePlay } from "react-icons/gr";
 import Logo from "../../public/bioquimico.webp";
 import { NavContext } from "./context/NavContext";
 import { Tabs, TabsList, TabsTrigger } from "./ui/tabs";
-import ModeToggle from "@/components/ModeToggle";
+//import ModeToggle from "@/components/ModeToggle";
+import SwitchComp from "@/components/SwitchComp";
 
 const NavComp = () => {
 	const { path } = useContext(NavContext);
@@ -49,7 +50,7 @@ const NavComp = () => {
 				</div>
 
 				<div className=''>
-					<ModeToggle />
+					<SwitchComp />
 				</div>
 			</div>
 		</nav>
