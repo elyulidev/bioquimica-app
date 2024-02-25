@@ -2,7 +2,7 @@ const Video = ({ poster, src, cls }) => {
 	return (
 		<video
 			className={cls}
-			poster={poster}
+			//poster={poster}
 			width='320'
 			height='320'
 			loop
