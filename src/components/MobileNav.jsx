@@ -11,33 +11,28 @@ const MobileNav = () => {
 	const { path } = useContext(NavContext);
 
 	return (
-		<Tabs className={`lg:hidden`} defaultValue='/' value={path}>
+		<Tabs className={`lg:hidden`} value={path}>
 			<TabsList className='flex justify-between'>
-				<TabsTrigger value='/'>
-					<Link href={`/`}>
+				<Link href={`/`}>
+					<TabsTrigger value='/'>
 						<FaHome className='text-primary' />
-					</Link>
-				</TabsTrigger>
-				<TabsTrigger value='/temas'>
-					<Link href={`/temas`}>
+					</TabsTrigger>
+				</Link>
+				<Link href={`/temas`}>
+					<TabsTrigger value='/temas'>
 						<FaSitemap className='text-primary' />
-					</Link>
-				</TabsTrigger>
-				{/* <TabsTrigger value='/recursos'>
-					<Link href={`/recursos`}>
-						<FaDatabase className='text-primary' />
-					</Link>
-				</TabsTrigger> */}
-				<TabsTrigger value='/multimedias'>
-					<Link href={`/multimedias`}>
+					</TabsTrigger>
+				</Link>
+				<Link href={`/multimedias`}>
+					<TabsTrigger value='/multimedias'>
 						<GrSchedulePlay className='text-primary' />
-					</Link>
-				</TabsTrigger>
-				<TabsTrigger value='/bibliografia'>
-					<Link href={`/bibliografia`}>
+					</TabsTrigger>
+				</Link>
+				<Link href={`/bibliografia`}>
+					<TabsTrigger value='/bibliografia'>
 						<FaBook className='text-primary' />
-					</Link>
-				</TabsTrigger>
+					</TabsTrigger>
+				</Link>
 			</TabsList>
 		</Tabs>
 	);
