@@ -8,10 +8,10 @@ import { useContext } from "react";
 import { NavContext } from "./context/NavContext";
 
 const MobileNav = () => {
-	const { path } = useContext(NavContext);
+	//const { path } = useContext(NavContext);
 
 	return (
-		<Tabs className={`lg:hidden`} value={path}>
+		<Tabs className={`lg:hidden`} defaultValue='/'>
 			<TabsList className='flex justify-between'>
 				<Link href={`/`}>
 					<TabsTrigger value='/'>
