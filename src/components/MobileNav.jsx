@@ -1,17 +1,38 @@
 "use client";
 
-import { FaSitemap, FaDatabase, FaBook, FaHome } from "react-icons/fa";
+import { FaSitemap, FaBook, FaHome } from "react-icons/fa";
 import { GrSchedulePlay } from "react-icons/gr";
 import { Tabs, TabsList, TabsTrigger } from "./ui/tabs";
 import Link from "next/link";
-import { useContext } from "react";
-import { NavContext } from "./context/NavContext";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
+/* import { useContext } from "react";
+import { NavContext } from "./context/NavContext"; */
 
+const linksNav = ["/", "/temas", "/multimedias", "/bibliografia"];
 const MobileNav = () => {
 	//const { path } = useContext(NavContext);
+	const [path, setPath] = useState("/");
+	const pathname = usePathname();
+	console.log("pathname", pathname);
+
+	const updateNav = (pathname) => {
+		if (pathname === "/") {
+			return setPath("/");
+		} else
+			linksNav.forEach((link) => {
+				if (pathname.startsWith(link)) {
+					return setPath(link);
+				}
+			});
+	};
+
+	useEffect(() => {
+		updateNav(pathname);
+	}, [pathname]);
 
 	return (
-		<Tabs className={`lg:hidden`} defaultValue='/'>
+		<Tabs className={`lg:hidden`} value={path}>
 			<TabsList className='flex justify-between'>
 				<Link href={`/`}>
 					<TabsTrigger value='/'>
