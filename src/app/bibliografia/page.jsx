@@ -5,26 +5,34 @@ const objCards = [
 	{
 		title: "Bioquímica Humana",
 		img: "/biblio/bioquimica_humana_book.webp",
+		bgImg: "bg-bioquimica-humana-book",
 		href: "/biblio/Bioquimica_Humana_1ed_Cardella.pdf",
 		icon: <FaBook />,
+		aspectRatio: "324/407",
 	},
 	{
 		title: "Bioquímica Humana",
 		img: "/biblio/bioquimica_humana_book.webp",
+		bgImg: "bg-bioquimica-humana-book",
 		href: "/biblio/Bioquimica_Humana_1ed_Cardella.pdf",
 		icon: <FaBook />,
+		aspectRatio: "324/407",
 	},
 	{
 		title: "Bioquímica Humana",
 		img: "/biblio/bioquimica_humana_book.webp",
+		bgImg: "bg-bioquimica-humana-book",
 		href: "/biblio/Bioquimica_Humana_1ed_Cardella.pdf",
 		icon: <FaBook />,
+		aspectRatio: "324/407",
 	},
 	{
 		title: "Bioquímica Humana",
 		img: "/biblio/bioquimica_humana_book.webp",
+		bgImg: "bg-bioquimica-humana-book",
 		href: "/biblio/Bioquimica_Humana_1ed_Cardella.pdf",
 		icon: <FaBook />,
+		aspectRatio: "324/407",
 	},
 ];
 
@@ -35,12 +43,12 @@ const BiblioPage = () => {
 				Bibliografía
 			</h1>
 			<div className='mt-2 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3'>
-				{objCards.map((card) => (
-					<div key={card.title} className='relative mx-auto group'>
+				{objCards.map((card, i) => (
+					<div key={i + card.title} className='relative mx-auto group'>
 						<Card
 							title={card.title}
-							img={card.img}
-							style={{ height: "320px" }}
+							bgImg={card.bgImg}
+							aspectRatio={card.aspectRatio}
 						/>
 						<div className='absolute top-0 left-0 w-full h-full hidden items-center justify-center bg-black bg-opacity-50 group-hover:flex'>
 							<a
