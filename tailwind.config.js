@@ -24,6 +24,7 @@ module.exports = {
 			},
 			backgroundImage: {
 				"hero-intro": "url('/intro/intro.webp')",
+				"bioquimica-humana-book": "url('/biblio/bioquimica_humana_book.webp')",
 			},
 			colors: {
 				border: "hsl(var(--border))",
