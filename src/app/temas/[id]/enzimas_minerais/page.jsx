@@ -12,7 +12,7 @@ import { GiMineWagon } from "react-icons/gi";
 
 const EnzMinPage = () => {
 	return (
-		<main className='py-16 px-1'>
+		<main className='py-16 px-1 lg:w-4/5 lg:mx-auto'>
 			<Accordion type='single' collapsible className='w-full '>
 				<AccordionItem value='item-1' className='bg-accordion shadow-sm '>
 					<AccordionTrigger className=' hover:no-underline'>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Digestao from "../../../../../../public/tematicas/tema4/intro/digestao.webp";
+import Digestao from "../../../../../../../public/tematicas/tema4/intro/digestao.webp";
 
 const MetabolismoBasalPage = () => {
 	return (
@@ -26,15 +26,15 @@ const MetabolismoBasalPage = () => {
 				<Image
 					src={Digestao}
 					alt=''
-					width={`full`}
+					width={300}
 					height={`auto`}
 					priority={true}
-					className='mb-3'
+					className='mb-3 mx-auto'
+					style={{ aspectRatio: "64/55" }}
 				/>
 				<div className='w-[80%] mx-auto overflow-x-auto'>
 					<p className='mb-2 text-center'>Termos chave</p>
 					<table className='mb-3'>
-						<fieldset></fieldset>
 						<thead className=''>
 							<tr>
 								<th className='border border-solid border-white '>Termo</th>

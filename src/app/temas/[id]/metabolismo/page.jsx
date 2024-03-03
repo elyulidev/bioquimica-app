@@ -14,7 +14,7 @@ import { SiMoleculer } from "react-icons/si";
 
 const MetabolismoPage = () => {
 	return (
-		<main className='py-16 px-1'>
+		<main className='py-16 px-1 lg:w-4/5 lg:mx-auto'>
 			<Accordion type='single' collapsible className='w-full '>
 				<AccordionItem value='item-1' className='bg-accordion shadow-sm '>
 					<AccordionTrigger className=' hover:no-underline '>
@@ -24,7 +24,10 @@ const MetabolismoPage = () => {
 						</div>
 					</AccordionTrigger>
 					<AccordionContent className='bg-accordion-blue-soft'>
-						<a href={`/tematicas/tema4/introducción_metabolismo.docx`} download>
+						<a
+							href={`/tematicas/tema4/intro/introducción_metabolismo.docx`}
+							download
+						>
 							<div className='flex justify-between items-center px-4 pt-1'>
 								<h2>Descarga</h2>
 								<FaFileWord />
@@ -38,42 +41,42 @@ const MetabolismoPage = () => {
 							</div>
 						</Link>
 						<Separator className='my-1' />
-						<Link href={`/temas/4/metabolismo/vias`}>
+						<Link href={`/temas/4/metabolismo/intro/vias`}>
 							<div className='flex justify-between items-center px-4 pt-1'>
 								<h2>Vias metabolicas</h2>
 								<FaArrowRight />
 							</div>
 						</Link>
 						<Separator className='my-1' />
-						<Link href={`/temas/4/metabolismo/funcoes`}>
+						<Link href={`/temas/4/metabolismo/intro/funcoes`}>
 							<div className='flex justify-between items-center px-4 pt-1'>
 								<h2>Funções</h2>
 								<FaArrowRight />
 							</div>
 						</Link>
 						<Separator className='my-1' />
-						<Link href={`/temas/4/metabolismo/rotas`}>
+						<Link href={`/temas/4/metabolismo/intro/rotas`}>
 							<div className='flex justify-between items-center px-4 pt-1'>
 								<h2>Rotas</h2>
 								<FaArrowRight />
 							</div>
 						</Link>
 						<Separator className='my-1' />
-						<Link href={`/temas/4/metabolismo/energetico`}>
+						<Link href={`/temas/4/metabolismo/intro/energetico`}>
 							<div className='flex justify-between items-center px-4 pt-1'>
 								<h2>Metabolismo energético</h2>
 								<FaArrowRight />
 							</div>
 						</Link>
 						<Separator className='my-1' />
-						<Link href={`/temas/4/metabolismo/basal`}>
+						<Link href={`/temas/4/metabolismo/intro/basal`}>
 							<div className='flex justify-between items-center px-4 pt-1'>
 								<h2>Metabolismo basal</h2>
 								<FaArrowRight />
 							</div>
 						</Link>
 						<Separator className='my-1' />
-						<Link href={`/temas/4/metabolismo/digestao`}>
+						<Link href={`/temas/4/metabolismo/intro/digestao`}>
 							<div className='flex justify-between items-center px-4 pt-1'>
 								<h2>Digestão</h2>
 								<FaArrowRight />
@@ -92,72 +95,41 @@ const MetabolismoPage = () => {
 						</div>
 					</AccordionTrigger>
 					<AccordionContent className='bg-accordion-blue-soft'>
-						<a href={`/tematicas/tema2/proteinas/Proteinas.docx`} download>
+						<a
+							href={`/tematicas/tema4/proteinas/Metabolismo_de_Proteinas.docx`}
+							download
+						>
 							<div className='flex justify-between items-center px-4 pt-1'>
 								<h2>Dercarga</h2>
 								<FaFileWord />
 							</div>
 						</a>
 						<Separator className='my-1' />
-						<Link href={`/temas/2/biomoleculas/proteinas/estruturas`}>
+						<Link href={`/temas/4/metabolismo/proteinas/destino`}>
 							<div className='flex justify-between items-center px-4 pt-1'>
-								<h2>Estruturas</h2>
+								<h2>Destino e transporte de aminoácidos</h2>
+								<FaArrowRight />
+							</div>
+						</Link>
+
+						<Separator className='my-1' />
+						<Link href={`/temas/4/metabolismo/proteinas/sintesis`}>
+							<div className='flex justify-between items-center px-4 pt-1'>
+								<h2>Síntesis de aminoácidos</h2>
 								<FaArrowRight />
 							</div>
 						</Link>
 						<Separator className='my-1' />
-						<Link href={`/temas/2/biomoleculas/proteinas/classificacao`}>
-							<div className='flex justify-between items-center px-4 pt-1 '>
-								<h2>Classificação</h2>
+						<Link href={`/temas/4/metabolismo/proteinas/catabolismo`}>
+							<div className='flex justify-between items-center px-4 pt-1'>
+								<h2>Catabolismo de aminoácidos</h2>
 								<FaArrowRight />
 							</div>
 						</Link>
 						<Separator className='my-1' />
-						<Link href={`/temas/2/biomoleculas/proteinas/funcao`}>
+						<Link href={`/temas/4/metabolismo/proteinas/disturbios`}>
 							<div className='flex justify-between items-center px-4 pt-1'>
-								<h2>Funções</h2>
-								<FaArrowRight />
-							</div>
-						</Link>
-						<Separator className='my-1' />
-						<Link href={`/temas/2/biomoleculas/proteinas/aminoacidos`}>
-							<div className='flex justify-between items-center px-4 pt-1'>
-								<h2>Aminoácidos</h2>
-								<FaArrowRight />
-							</div>
-						</Link>
-						<Separator className='my-1' />
-						<Link href={`/temas/2/biomoleculas/proteinas/ligacao_peptidica`}>
-							<div className='flex justify-between items-center px-4 pt-1'>
-								<h2>Ligação peptídica</h2>
-								<FaArrowRight />
-							</div>
-						</Link>
-						<Separator className='my-1' />
-						<Link href={`/temas/2/biomoleculas/proteinas/peptideos`}>
-							<div className='flex justify-between items-center px-4 pt-1'>
-								<h2>Peptídeos</h2>
-								<FaArrowRight />
-							</div>
-						</Link>
-						<Separator className='my-1' />
-						<Link href={`/temas/2/biomoleculas/proteinas/valor_bio`}>
-							<div className='flex justify-between items-center px-4 pt-1'>
-								<h2>Valor Biológico</h2>
-								<FaArrowRight />
-							</div>
-						</Link>
-						<Separator className='my-1' />
-						<Link href={`/temas/2/biomoleculas/proteinas/desnaturacao`}>
-							<div className='flex justify-between items-center px-4 pt-1'>
-								<h2>Desnaturação</h2>
-								<FaArrowRight />
-							</div>
-						</Link>
-						<Separator className='my-1' />
-						<Link href={`/temas/2/biomoleculas/proteinas/fontes`}>
-							<div className='flex justify-between items-center px-4 pt-1'>
-								<h2>Fontes</h2>
+								<h2>Distúrbios metabólicos do ciclo da ureia</h2>
 								<FaArrowRight />
 							</div>
 						</Link>
@@ -172,55 +144,32 @@ const MetabolismoPage = () => {
 					</AccordionTrigger>
 					<AccordionContent className='bg-accordion-blue-soft'>
 						<a
-							href={`/tematicas/tema2/carboidratos/Carboidratos.docx`}
+							href={`/tematicas/tema4/carboidratos/Metabolismo_de_carboidratos.docx`}
 							download
 						>
 							<div className='flex justify-between items-center px-4 pt-1'>
-								<h2>Dercarga</h2>
+								<h2>Descarga</h2>
 								<FaFileWord />
 							</div>
 						</a>
 						<Separator className='my-1' />
-						<Link href={`/temas/2/biomoleculas/carboidratos/funcao`}>
+						<Link href={`/temas/4/metabolismo/carboidratos/disturbios`}>
 							<div className='flex justify-between items-center px-4 pt-1'>
-								<h2>Funções</h2>
+								<h2>Distúrbios do metabolismo de carboidratos</h2>
 								<FaArrowRight />
 							</div>
 						</Link>
 						<Separator className='my-1' />
-						<Link href={`/temas/2/biomoleculas/carboidratos/classificacao`}>
+						<Link href={`/temas/4/metabolismo/carboidratos/galactosemia`}>
 							<div className='flex justify-between items-center px-4 pt-1 '>
-								<h2>Classificação</h2>
+								<h2>Galactosemia</h2>
 								<FaArrowRight />
 							</div>
 						</Link>
 						<Separator className='my-1' />
-						<Link href={`/temas/2/biomoleculas/carboidratos/exemplos`}>
+						<Link href={`/temas/4/metabolismo/carboidratos/diabetes`}>
 							<div className='flex justify-between items-center px-4 pt-1'>
-								<h2>Exemplos</h2>
-								<FaArrowRight />
-							</div>
-						</Link>
-						<Separator className='my-1' />
-						<Link href={`/temas/2/biomoleculas/carboidratos/fontes`}>
-							<div className='flex justify-between items-center px-4 pt-1'>
-								<h2>Fontes</h2>
-								<FaArrowRight />
-							</div>
-						</Link>
-						<Separator className='my-1' />
-						<Link
-							href={`/temas/2/biomoleculas/carboidratos/ligacao_glicosidica`}
-						>
-							<div className='flex justify-between items-center px-4 pt-1'>
-								<h2>Ligação Glicosídica</h2>
-								<FaArrowRight />
-							</div>
-						</Link>
-						<Separator className='my-1' />
-						<Link href={`/temas/2/biomoleculas/carboidratos/fibra_dietetica`}>
-							<div className='flex justify-between items-center px-4 pt-1'>
-								<h2>Fibra Dietética</h2>
+								<h2>Diabetes Mellitus</h2>
 								<FaArrowRight />
 							</div>
 						</Link>
@@ -234,99 +183,65 @@ const MetabolismoPage = () => {
 						</div>
 					</AccordionTrigger>
 					<AccordionContent className='bg-accordion-blue-soft'>
-						<a href={`/tematicas/tema2/lipidos/Lipidos.docx`} download>
+						<a href={`/tematicas/tema4/lipidos/Lipidos.docx`} download>
 							<div className='flex justify-between items-center px-4 pt-1'>
 								<h2>Dercarga</h2>
 								<FaFileWord />
 							</div>
 						</a>
 						<Separator className='my-1' />
-						<Link href={`/temas/2/biomoleculas/lipidios/estruturas`}>
+						<Link href={`/temas/4/metabolismo/lipidios/tipos`}>
 							<div className='flex justify-between items-center px-4 pt-1'>
-								<h2>Estruturas</h2>
+								<h2>Tipos de Lipídios</h2>
 								<FaArrowRight />
 							</div>
 						</Link>
 						<Separator className='my-1' />
-						<Link href={`/temas/2/biomoleculas/lipidios/funcao`}>
+						<Link href={`/temas/4/metabolismo/lipidios/digestao`}>
 							<div className='flex justify-between items-center px-4 pt-1'>
-								<h2>Funções</h2>
+								<h2>Digestão</h2>
 								<FaArrowRight />
 							</div>
 						</Link>
 						<Separator className='my-1' />
-						<Link href={`/temas/2/biomoleculas/lipidios/classificacao`}>
+						<Link href={`/temas/4/metabolismo/lipidios/absorcao`}>
 							<div className='flex justify-between items-center px-4 pt-1 '>
-								<h2>Classificação</h2>
+								<h2>Absorção</h2>
 								<FaArrowRight />
 							</div>
 						</Link>
-
 						<Separator className='my-1' />
-						<Link href={`/temas/2/biomoleculas/lipidios/acidos_gordos`}>
+						<Link href={`/temas/4/metabolismo/lipidios/transporte`}>
 							<div className='flex justify-between items-center px-4 pt-1'>
-								<h2>Ácidos gordos</h2>
+								<h2>Transporte</h2>
 								<FaArrowRight />
 							</div>
 						</Link>
 						<Separator className='my-1' />
-						<Link href={`/temas/2/biomoleculas/lipidios/exemplos`}>
+						<Link href={`/temas/4/metabolismo/lipidios/sintese`}>
 							<div className='flex justify-between items-center px-4 pt-1'>
-								<h2>Exemplos</h2>
+								<h2>Síntese e Decomposição de lípidos</h2>
 								<FaArrowRight />
 							</div>
 						</Link>
 						<Separator className='my-1' />
-						<Link href={`/temas/2/biomoleculas/lipidios/fontes`}>
+						<Link href={`/temas/4/metabolismo/lipidios/disturbios`}>
 							<div className='flex justify-between items-center px-4 pt-1'>
-								<h2>Fontes</h2>
+								<h2>Distúrbios do metabolismo de lípidos</h2>
 								<FaArrowRight />
 							</div>
 						</Link>
 						<Separator className='my-1' />
-						<Link href={`/temas/2/biomoleculas/lipidios/ranciosidades`}>
+						<Link href={`/temas/4/metabolismo/lipidios/dislipidemia`}>
 							<div className='flex justify-between items-center px-4 pt-1'>
-								<h2>Ranciosidades das grasas</h2>
+								<h2>Dislipidemia</h2>
 								<FaArrowRight />
 							</div>
 						</Link>
-					</AccordionContent>
-				</AccordionItem>
-				<AccordionItem
-					value='item-5'
-					className='bg-accordion-blue-green shadow-sm '
-				>
-					<AccordionTrigger className=' hover:no-underline '>
-						<div className='flex items-center gap-2 text-card-foreground'>
-							<GiMinerals className='text-lg font-bold ml-3' />
-							<h2 className='text-xl font-bold'>otro</h2>
-						</div>
-					</AccordionTrigger>
-					<AccordionContent className='bg-accordion-blue-soft'>
-						<a href={`/tematicas/tema2/vitaminas/Vitaminas.docx`} download>
+						<Separator className='my-1' />
+						<Link href={`/temas/4/metabolismo/lipidios/aterosclerose`}>
 							<div className='flex justify-between items-center px-4 pt-1'>
-								<h2>Dercarga</h2>
-								<FaFileWord />
-							</div>
-						</a>
-						<Separator className='my-1' />
-						<Link href={`/temas/2/biomoleculas/vitaminas/classificacao`}>
-							<div className='flex justify-between items-center px-4 pt-1 '>
-								<h2>Classificação</h2>
-								<FaArrowRight />
-							</div>
-						</Link>
-						<Separator className='my-1' />
-						<Link href={`/temas/2/biomoleculas/vitaminas/estruturas`}>
-							<div className='flex justify-between items-center px-4 pt-1'>
-								<h2>Estruturas</h2>
-								<FaArrowRight />
-							</div>
-						</Link>
-						<Separator className='my-1' />
-						<Link href={`/temas/2/biomoleculas/vitaminas/tabela_func`}>
-							<div className='flex justify-between items-center px-4 pt-1 '>
-								<h2>Tabela das funções e doenças</h2>
+								<h2>Aterosclerose</h2>
 								<FaArrowRight />
 							</div>
 						</Link>

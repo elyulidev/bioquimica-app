@@ -16,7 +16,6 @@ const MetabolismoFuncoesPage = () => {
 					<li className='mb-2 font-semibold'>
 						Eliminação de substâncias residuais.
 					</li>{" "}
-					posterior utilização pelo cérebro.
 				</ul>
 			</div>
 		</main>

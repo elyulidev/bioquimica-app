@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Energetico from "../../../../../../public/tematicas/tema4/intro/energetico.webp";
+import Energetico from "../../../../../../../public/tematicas/tema4/intro/energetico.webp";
 
 const MetabolismoEnergeticoPage = () => {
 	return (
@@ -43,9 +43,10 @@ const MetabolismoEnergeticoPage = () => {
 				<Image
 					src={Energetico}
 					alt=''
-					width={`full`}
+					width={300}
 					height={`auto`}
 					priority={true}
+					className='mx-auto'
 				/>
 			</div>
 		</main>
