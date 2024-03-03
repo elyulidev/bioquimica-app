@@ -34,7 +34,7 @@ const ThemesPage = () => {
 			<section className='grid gap-4 md:grid-cols-2 lg:grid-cols-3'>
 				{themeCards.map((t) => (
 					<Link href={t.href} key={t.id} className='mx-auto'>
-						<Card {...t} />
+						<Card {...t} style={{ aspectRatio: "4/3" }} />
 					</Link>
 				))}
 			</section>
