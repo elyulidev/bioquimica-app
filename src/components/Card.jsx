@@ -3,7 +3,7 @@ import Image from "next/image";
 const Card = ({ img, bgImg, aspectRatio, title, style }) => {
 	return (
 		<div
-			className={`max-w-xs  bg-card-foreground rounded-md shadow-sm border border-muted`}
+			className={`max-w-xs min-w-64 bg-card-foreground rounded-md shadow-sm border border-muted`}
 		>
 			{img ? (
 				<Image
@@ -16,7 +16,7 @@ const Card = ({ img, bgImg, aspectRatio, title, style }) => {
 				/>
 			) : (
 				<div
-					className={`w-full ${bgImg} bg-cover`}
+					className={`w-full max-h-80 ${bgImg} bg-cover`}
 					style={{ aspectRatio }}
 				></div>
 			)}

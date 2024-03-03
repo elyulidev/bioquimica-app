@@ -25,6 +25,11 @@ module.exports = {
 			backgroundImage: {
 				"hero-intro": "url('/intro/intro.webp')",
 				"bioquimica-humana-book": "url('/biblio/bioquimica_humana_book.webp')",
+				"bioquimica-medica-book": "url('/biblio/bioquimica_medica_book.webp')",
+				"bioquimica-ilustrada-book":
+					"url('/biblio/bioquimica_ilustrada_book.webp')",
+				"principios-bioquimica-book":
+					"url('/biblio/principios_bioquimica_book.webp')",
 			},
 			colors: {
 				border: "hsl(var(--border))",
