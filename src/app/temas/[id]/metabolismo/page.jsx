@@ -105,13 +105,19 @@ const MetabolismoPage = () => {
 							</div>
 						</a>
 						<Separator className='my-1' />
+						<Link href={`/temas/4/metabolismo/proteinas/m_proteinas`}>
+							<div className='flex justify-between items-center px-4 pt-1'>
+								<h2>Metabolismo das proteínas</h2>
+								<FaArrowRight />
+							</div>
+						</Link>
+						<Separator className='my-1' />
 						<Link href={`/temas/4/metabolismo/proteinas/destino`}>
 							<div className='flex justify-between items-center px-4 pt-1'>
 								<h2>Destino e transporte de aminoácidos</h2>
 								<FaArrowRight />
 							</div>
 						</Link>
-
 						<Separator className='my-1' />
 						<Link href={`/temas/4/metabolismo/proteinas/sintesis`}>
 							<div className='flex justify-between items-center px-4 pt-1'>
@@ -153,6 +159,13 @@ const MetabolismoPage = () => {
 							</div>
 						</a>
 						<Separator className='my-1' />
+						<Link href={`/temas/4/metabolismo/carboidratos/m_carboidratos`}>
+							<div className='flex justify-between items-center px-4 pt-1'>
+								<h2>Metabolismo de carboidratos</h2>
+								<FaArrowRight />
+							</div>
+						</Link>
+						<Separator className='my-1' />
 						<Link href={`/temas/4/metabolismo/carboidratos/disturbios`}>
 							<div className='flex justify-between items-center px-4 pt-1'>
 								<h2>Distúrbios do metabolismo de carboidratos</h2>
@@ -189,6 +202,13 @@ const MetabolismoPage = () => {
 								<FaFileWord />
 							</div>
 						</a>
+						<Separator className='my-1' />
+						<Link href={`/temas/4/metabolismo/lipidios/m_lipidico`}>
+							<div className='flex justify-between items-center px-4 pt-1'>
+								<h2>Metabolismo Lipídico</h2>
+								<FaArrowRight />
+							</div>
+						</Link>
 						<Separator className='my-1' />
 						<Link href={`/temas/4/metabolismo/lipidios/tipos`}>
 							<div className='flex justify-between items-center px-4 pt-1'>
