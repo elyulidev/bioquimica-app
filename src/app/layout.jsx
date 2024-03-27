@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-
+import { Analytics } from "@vercel/analytics/react";
 import NavContextProvider from "@/components/context/NavContext";
 
 export const fontSans = FontSans({
@@ -36,6 +36,7 @@ export default function RootLayout({ children }) {
 					<NavContextProvider>
 						<Header />
 						{children}
+						<Analytics />
 						<Footer />
 					</NavContextProvider>
 				</ThemeProvider>
